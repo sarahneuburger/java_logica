@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    
+    <script>
+
+        var primeiro_lado = prompt("Informe a dimensão do primeiro lado.")
+        var segundo_lado = prompt("Informe a dimensão do segundo lado.")
+        var terceiro_lado = prompt("Informe a dimensão do terceiro lado.")
+        var quarto_lado = prompt("Informe a dimensão do quarto lado.")
+
+        // validar todos os lados, se ficasse sem o terceiro && não iria validar corretamente
+        if(primeiro_lado == segundo_lado && terceiro_lado == quarto_lado && segundo_lado == terceiro_lado) {
+            document.write("É um quadrado.")
+        } else {
+            document.write("Não é um quadrado.")
+        }
+        
+    </script>
+
+</body>
+</html>

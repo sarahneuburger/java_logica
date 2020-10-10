@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    
+    <script>
+
+        //lembrar de converter valor para não impactar nos cálculos posteriormente
+        var um_centavo = parseInt(prompt("Insira a quantidade de moedas de R$ 0,01"))
+        var cinco_centavos = parseInt(prompt("Insira a quantidade de moedas de R$ 0,05"))
+        var dez_centavos = parseInt(prompt("Insira a quantidade de moedas de R$ 0,10"))
+        var vinte_e_cinco_centavos = parseInt(prompt("Insira a quantidade de moedas de R$ 0,25"))
+        var cinquenta_centavos = parseInt(prompt("Insira a quantidade de moedas de R$ 0,50"))
+        var um_real = parseInt(prompt("Insira a quantidade de moedas de R$ 1,00"))
+
+        var total = ((um_centavo * 0.01) + (cinco_centavos * 0.05) + (dez_centavos * 0.10) + (vinte_e_cinco_centavos * 0.25) + (cinquenta_centavos * 0.50) + (um_real * 1.0))
+
+        document.write("O valor total em moedas é R$ " + total + ".")
+
+    </script>
+
+</body>
+</html>

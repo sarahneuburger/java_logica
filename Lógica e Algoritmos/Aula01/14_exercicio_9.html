@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+</head>
+<body>
+    
+    <script>
+
+        //lembrar de converter valor para não impactar nos cálculos posteriormente
+        var valor1 = parseFloat(prompt("Insira o primeiro número."))
+        var valor2 = parseFloat(prompt("Insira o segundo número."))
+        var valor3 = parseFloat(prompt("Insira o terceiro número."))
+
+        // o meu primeiro valor é o menor, depois vamos comparando e assumindo o menor
+        var menor = valor1
+
+        if (menor > valor2){
+            menor = valor2
+        } 
+        if (menor > valor3){
+            menor = valor3
+        }
+
+        document.write("O menor número é " +  menor + ".")
+        
+    </script>
+
+</body>
+</html>

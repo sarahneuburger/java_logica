@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Composta</title>
+</head>
+<body>
+
+    <script>
+
+        // pedir duas notas
+        var nota1 = parseFloat(prompt("Informe a primeira nota."))
+        var nota2 = parseFloat(prompt("Informe a segunda nota."))
+        
+        // realizar o cálculo de média
+        var media = (nota1 + nota2) / 2 //hierarquia dos cálculos
+
+        // usar "parse" para que o valor seja identificado como número e haja o cálculo
+        // parseInt - números inteiros
+        // parseFloat - números "quebrados", com vírgula
+        //document.write(nota1 + nota2)
+
+        document.write("A média é " + media + ". ")
+
+        // Condicional Composta/Aninhada = segue a hieraquia que digitamos, logo, se não atender 
+        // o primeiro requisito, vai descendo para o próximo até atender
+        // por isso que não precisa colocar "media de 8 à 9.9", por exemplo
+        if(media == 10){
+            document.write("Parabéns! Nota máxima!")
+        } else if(media >= 8){
+            document.write("Bom!")
+        } else if(media >= 7) {
+            document.write("Na média.")
+        } else if(media >= 5){
+            document.write("Em recuperação.")
+        } else {
+            document.write("Reprovado(a).")
+        }
+
+
+    </script>
+    
+</body>
+</html>

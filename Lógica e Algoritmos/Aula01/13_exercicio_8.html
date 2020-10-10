@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+<body>
+    
+    <script>
+        //lembrar de converter valor para não impactar nos cálculos posteriormente
+        var nota1 = parseFloat(prompt("Insira a primeira nota."))
+        var nota2 = parseFloat(prompt("Insira a segunda nota."))
+        var nota3 = parseFloat(prompt("Insira a terceira nota."))
+
+        var num_faltas = parseInt(prompt("Insira o número de faltas."))
+
+        var media = (nota1 + nota2 + nota3) / 3
+
+        if (num_faltas >= 15 || media < 5) {
+            document.write("O aluno está reprovado.")
+        } else if (num_faltas < 15 && media > 7) {
+            document.write("O aluno foi aprovado.")
+        } else if (num_faltas < 15 && media >= 5) {
+            document.write("O aluno está em exame.")
+        } 
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+<body>
+    
+    <script>
+
+        //lembrar de converter valor para não impactar nos cálculos posteriormente
+        var valor1 = parseFloat(prompt("Insira o primeiro valor."))
+        var valor2 = parseFloat(prompt("Insira o segundo valor."))
+
+        var calculo = prompt("Escolha o cálculo que deseja efetuar: \n1 - Soma \n2 - Subtração \n3 - Multiplicação \n4 - Divisão")
+        
+        if (calculo == 1) {
+            document.write("A soma dos valores é igual a " + (valor1 + valor2) + ".");
+        } else if (calculo == 2) {
+            document.write("A subtração dos valores é igual a " + (valor1 - valor2) + ".");
+        } else if (calculo == 3) {
+            document.write("A multiplicação dos valores é igual a " + (valor1 * valor2) + ".");
+        } else if (calculo == 4) {
+            document.write("A divisão dos valores é igual a " + (valor1 / valor2) + ".");
+        }
+
+    </script>
+
+</body>
+</html>

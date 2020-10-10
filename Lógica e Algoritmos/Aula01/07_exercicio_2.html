@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    
+    <script>
+
+        var pedido = prompt("Informe o número do seu pedido: \n1- Pizza \n2- Pão de Queijo \n3- Macarrão \n4- Pastel")
+       
+        //lembrar de converter valor para não impactar nos cálculos posteriormente
+        var pagamento = parseFloat(prompt("Informe o valor pago."))
+
+        var troco = 0
+    
+        if(pedido == 1){
+            troco = pagamento - 12.00
+            if(troco < 0){
+                document.write("O valor informado é inválido.")
+            } else {
+                document.write("Seu troco é R$ " + troco + ".") 
+            }
+        } else if (pedido == 2) {
+            troco = pagamento - 4.00
+            if(troco < 0){
+                document.write("O valor informado é inválido.")
+            } else {
+            document.write("Seu troco é R$ " + troco + ".") 
+        }
+        } else if (pedido == 3) {
+           troco = pagamento - 16.00
+           if(troco < 0){
+                document.write("O valor informado é inválido.")
+            } else {
+           document.write("Seu troco é R$ " + troco + ".")
+            }
+        } else if (pedido == 4){
+            troco = pagamento - 4.50
+            if(troco < 0){
+                document.write("O valor informado é inválido.")
+            } else {
+            document.write("Seu troco é R$ " + troco + ".")
+            }
+        } 
+
+
+    </script>
+
+</body>
+</html>

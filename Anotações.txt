@@ -1,0 +1,12 @@
+git e github
+
+
+HTML / JavaScript
+head= 
+- adiciona fav icon (?), imagem na abinha;
+- conhecimento;
+
+body=
+- estrutura da página;
+
+shift + ponto = fecha a estrutura <script> </script>
