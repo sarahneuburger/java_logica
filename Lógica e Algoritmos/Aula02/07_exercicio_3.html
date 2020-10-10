@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    
+    <script>
+
+        var joao = 0, maria = 0, joana = 0
+
+        do{
+            var candidato = parseInt(prompt("Insira o número do seu candidato: \n1) João \n2) Maria \n3) Joana"))
+
+                switch(candidato){
+                case 1:
+                joao++
+                break
+
+                case 2:
+                maria++
+                break
+
+                default:
+                joana++
+            }
+
+        }while(confirm("Continuar votando?"))
+
+        document.write("João recebeu: " + joao + " votos." + "<br>")
+        document.write("Maria recebeu: " + maria + " votos." + "<br>")
+        document.write("Joana recebeu: " + joana + " votos." + "<br>")       
+
+    </script>
+
+</body>
+</html>
