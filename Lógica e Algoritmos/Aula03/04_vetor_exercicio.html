@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4 - Vetor</title>
+</head>
+<body>
+
+    <script>
+
+    // Vetor
+    var vetor = []
+    var indice = 0
+
+    // Laço
+    do{
+
+        // Capturar numero
+        var numero = parseInt(prompt("Informe o " + (indice+1) + "º número."))
+
+        // Existe
+        var existe = false //comparando boolean para entender se deve retornar o preenchimento do número, pois está repetido
+
+        // Verificar se o número existe no vetor
+        for(var i=0; i<vetor.length; i++) {// i é uma variável apenas para comparação
+            if(numero == vetor[i]){ //numero recebe o vetor[i] para que haja a análise de todas as posições para os números repetidos
+                existe = true
+            }
+        }
+
+        // Caso o número já exista no vetor
+        if(existe == true) {
+            alert("O número informado já existe, favor adicionar outro.")
+        }else{
+            vetor.push(numero)
+            indice++
+        }
+    }while(indice < 5)
+
+    document.write("Os números informados foram: ")
+
+    for(var indice = 0; indice < vetor.length; indice++){
+    document.write(vetor[indice] + " ")
+    }
+
+
+// SARAH - está errado - para histórico - comparava só os dois primeiros números
+// Vetor para os números
+// var numeros = []
+//     var numero
+// Obter os cinco números
+//     for(var indice=0; indice<5; indice++) {
+
+//         numero = parseInt(prompt("Informe o " + (indice+1) + "º número:"))
+
+//         if(numero != numeros[]){
+//             numeros.push(numero)
+        
+//     }else {
+//         alert("O número já foi informado.")
+//        }
+// }   
+
+//     document.write("Os números informados foram: ")
+
+//     for(var indice = 0; indice < numeros.length; indice++){
+//         document.write(numeros[indice] + " ")
+//     }
+
+    </script>
+    
+</body>
+</html>

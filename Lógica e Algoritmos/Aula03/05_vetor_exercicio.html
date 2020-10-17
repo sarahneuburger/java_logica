@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Vetores</title>
+</head>
+<body>
+    
+    <script>
+
+    // vetor de números
+    var numeros = []
+
+    // Obter os cinco números
+    for(var indice=0; indice<5; indice++) {
+        numeros[indice] = parseInt(prompt("Informe o " + (indice+1) + "º número:"))
+    }
+
+    // Verificar se número dez existe
+    var existe = false
+
+    // Verificação se o número 10 existe
+    for(var indice = 0; indice < numeros.length; indice++){
+        if(numeros[indice] == 10){
+        document.write("O número dez está na " + (indice+1) + "ª posição.")
+        existe = true
+        }
+    }
+
+    // Caso 10 não tenha sido listado
+    if(existe == false){
+        document.write("O número 10 não foi informado.")
+    }
+
+    </script>
+
+</body>
+</html>

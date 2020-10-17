@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4 - Funções</title>
+</head>
+<body>
+    
+    <script>
+
+    
+    var nomes = []
+
+    
+    function cadastrar(){
+            
+        var campo_nome = document.getElementById("campo_nome")
+
+        if(campo_nome.value == "") {
+            alert("Favor informar um nome.")
+        }else if(campo_nome.value.length < 3) {
+            alert("Favor informar um nome com pelo menos três caracteres.")
+        }else{
+
+        nomes.push(campo_nome.value)
+
+        campo_nome.value = ""
+
+        campo_nome.focus()
+
+        listar()
+            }
+        }
+
+        function listar(){
+            var lista = document.getElementById("lista")
+
+            lista.innerHTML = ""
+            
+            for(var linha=0; linha<nomes.length; linha++) {
+                lista.innerHTML += nomes[linha]
+                lista.innerHTML += " <button onClick='remover("+linha+")'>Remover</button>"
+                lista.innerHTML += "<hr>"
+            }
+        }
+
+        function remover(indice){
+
+            nomes.splice(indice, 1)
+            listar()
+        }
+        
+    </script>
+
+</head>
+<body>
+
+    <form>
+        <input type="text" id="campo_nome" placeholder="Informe um nome">
+        <input type="button" value="Cadastrar" onclick="cadastrar()">
+    </form>
+    
+    <div id="lista"></div>
+
+</body>
+</html>

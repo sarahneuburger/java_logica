@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6 - Funções</title>
+</head>
+<body>
+    
+    <script>
+
+        function tabuada() {
+            var indice = 1
+            var valor = parseInt(document.getElementById("valor").value)
+            
+            document.write("Os números da tabuada do " + valor + " são: <hr>")
+
+            while(indice < 11) {
+            document.write (valor * indice + "<br>")
+            indice++
+            }
+        }
+
+    </script>
+
+    <input type="text" id="valor" placeholder="Informe o número para visualizar a tabuada:">
+    <input type="button" value="Inserir" onclick="tabuada()">
+
+</body>
+</html>

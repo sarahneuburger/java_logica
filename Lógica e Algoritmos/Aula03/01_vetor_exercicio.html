@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Vetores</title>
+</head>
+<body>
+
+    <script>
+
+        // pedir cinco números e apresentá-los em ordem inversa 
+        // vetor de números
+        var numeros = []
+
+        // Obter os cinco números
+        for(var indice=0; indice<5; indice++) {
+            numeros[indice] = parseInt(prompt("Informe o " + (indice+1) + "º número:"))
+        }
+
+      // Exibir em ordem contrária, o índice ao invés de 0, é o nosso limite de números, para parar o índice é igual a 0, vai diminuindo "--" para fazer a ordem inversa
+      for(var indice=4; indice>=0; indice--){
+          document.write(numeros[indice] + " ")
+      }
+
+
+
+    </script>
+    
+</body>
+</html>

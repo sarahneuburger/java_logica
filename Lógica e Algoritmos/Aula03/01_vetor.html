@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores</title>
+</head>
+<body>
+
+    <script>
+
+        // vetor - banco de dados local, guarda vários dados, variável que guarda conjunto de informações
+        // coloca os dados entre colchetes, com as apas e vírgulas
+        var cores = ["Vermelho", "Azul", "Amarelo", "Roxo"]
+        // vetor começa do zero
+
+        // exibir a quantidade de cores
+        document.write("Há " + cores.length + " cores.<hr>" )
+
+        // exibir cores - entre colchetes está a cor que queremos exibir, sua posição
+        // normalmente com vetores é utilizado o for
+        for(var linha = 0; linha < cores.length; linha++){
+            document.write(cores[linha] + "<br>")
+        }
+        
+        // só apresenta os dados no JS, outras liguagens dá erro, pois tem que especificar a cor 
+
+    </script>
+    
+</body>
+</html>

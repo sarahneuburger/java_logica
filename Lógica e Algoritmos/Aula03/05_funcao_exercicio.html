@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Funções</title>
+</head>
+<body>
+    
+    <script>
+
+        function converter(codigo) {
+
+            var valor = parseFloat(document.getElementById("valor").value)
+
+            switch(parseInt(codigo)) {
+                case 1:
+                document.write("O valor convertido de real para dólar é de " + (valor * 5.65).toFixed(2) + " dólares.")
+                break
+
+                case 2:
+                document.write("O valor convertido de dólar para real é de " + (valor / 5.65).toFixed(2) + " reais.")
+                break
+
+                case 3:
+                document.write("O valor convertido de real para euro é de " + (valor * 6.62).toFixed(2) + " euros.")
+                break
+
+                case 4:
+                document.write("O valor convertido de euro para real é de " + (valor / 6.62).toFixed(2) + " reais.")
+                break
+
+                default:
+                document.write("Operação inválida, tente novamente.")
+            }
+        }
+        
+    </script>
+
+    <input type="text" id="valor" placeholder="Informe o valor a ser convertido:">
+
+
+    <select onchange="converter(this.value)"> 
+        <option value="0">Tipo de conversão</option>
+        <option value="1">Real para Dólar</option>
+        <option value="2">Dólar para Real</option>
+        <option value="3">Real para Euro</option>
+        <option value="4">Euro para Real</option>
+    </select>
+
+</body>
+</html>

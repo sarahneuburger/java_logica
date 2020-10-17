@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Função</title>
+</head>
+<body>
+    
+    <script>
+
+        // Função para receber a primeira nota
+        function notaUm(){
+            var primeiraNota = parseInt(document.getElementById("primeiraNota").value)
+            return primeiraNota
+        }
+
+        // Função para receber a segunda nota
+        function notaDois(){
+            var segundaNota = parseInt(document.getElementById("segundaNota").value)
+            return segundaNota
+        }
+
+        // Função de média
+        function media(){
+            media = (notaUm() + notaDois()) / 2
+            if(media >= 7){
+                document.write("O aluno está aprovado.")
+            }else{
+                document.write("O aluno está reprovado.")
+            }
+        }
+
+
+    </script>
+
+    <form>
+        <input type="text" id="primeiraNota" placeholder="Informe a primeira nota:">
+        <input type="text" id="segundaNota" placeholder="Informe a segunda nota:">
+        <input type="button" value="Inserir" onclick="media()">
+
+    </form>
+
+
+</body>
+</html>

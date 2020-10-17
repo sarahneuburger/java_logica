@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomes</title>
+
+    <!-- JS -->
+    <script>
+
+        // vetor de nomes
+        var nomes = []
+
+        // Função de cadastro
+        function cadastrar(){
+            
+            // Obtém o nome digitado
+            var campo_nome = document.getElementById("campo_nome")
+
+            // Validar se o campo nome está vazio e se há pelo menos três caracteres
+            if(campo_nome.value == "") {
+                alert("Favor informar um nome.")
+            }else if(campo_nome.value.length < 3) {
+                alert("Favor informar um nome com pelo menos três caracteres.")
+            }else{
+
+                // Cadastrar no vetor - "push" - cadastra uma informação nova
+                nomes.push(campo_nome.value)
+
+                // Limpar campo
+                campo_nome.value = ""
+
+                // Adicionar o cursor no campo
+                campo_nome.focus()
+
+                // Atualiza a listagem de nomes - função declara abaixo, é chamada ao final do cadastro
+                listar()
+            }
+        }
+
+        // Função para listar os nomes
+        function listar(){
+            
+            // Obter o elemento lista
+            var lista = document.getElementById("lista")
+
+            // Limpar o conteúdo da lista - "innerHTML" - puxa todos os dados em html
+            lista.innerHTML = ""
+            
+            // Laço de repetição - usar "+=" para que entenda que não deve sobrepor o último nome cadastrado e sim, trazer todos os anteriores e ir atualizando
+            for(var linha=0; linha<nomes.length; linha++) {
+                lista.innerHTML += nomes[linha]
+                lista.innerHTML += " <button onClick='remover("+linha+")'>Remover</button>" //inclui ao lado do nome incluído, um botão de remover
+                lista.innerHTML += "<hr>" // quebra em lista, com uma "divisão" entre os nomes
+            }
+        }
+
+        // Função para remover
+        function remover(indice){
+
+            // Remover o nome no vetor
+            nomes.splice(indice, 1) // fala a partir de qual remover e quantos a partir deste
+
+            // Atualizar a listagem de nomes
+            listar()
+        }
+        
+    </script>
+
+</head>
+<body>
+
+    <!-- Formulário - boa prática que esteja entre "form" -->
+    <form>
+        <input type="text" id="campo_nome" placeholder="Informe um nome">
+        <input type="button" value="Cadastrar" onclick="cadastrar()">
+    </form>
+    
+    <!-- Listagem de nomes - "div" é um elemento neutro para inserir outros itens -->
+    <div id="lista"></div>
+
+</body>
+</html>
