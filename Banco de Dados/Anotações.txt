@@ -1,0 +1,53 @@
+Banco de Dados
+
+MySQL é mais utilizado no Java;
+Armazenar dados por tempo indeterminado;
+Todo tipo de dados;
+
+SGDB - Sitema Gerenciar de Banco de Dados:
+- MySQL
+- SQL Server
+- Oracle
+- PostgreSQL
+
+Linguagem SQL - Structura Query Language
+	- DDL - data define language - estruras
+	- DML - data manipulation language - gerenciar os dados na estrutura
+
+Workbench - tela visual para visualizar o banco de dados, é MySQL
+Schemas - são os projetos
+Só o raiozinho - executa todas as linhas
+Raio com cursor - executa somente a linha onde está o cursor
+
+Comentário é com "#"
+
+Em maisculo - comandos do banco, nativo, não pode trocar
+Em minusculo - comandos criados por nós
+
+Não podemos ter base de dados com o mesmo nome
+
+Tables - Onde armazena os dados
+View -Maneira de visualizar os dados
+Stored Procedure - Funções. Executa ação e não retorna nada. Acessar dados a partir do banco, é mais rápido do que pela linguagem
+Functions - Executa ação e retorna resultado.
+
+Banco é como se fosse uma planilha, parâmetros.
+
+Tipo de dados
+VARCHAR - Vários caracteres
+Entre parenteses, fica a quantidade de caracteres
+INT - valores inteiros
+
+
+
+
+
+
+
+
+
+
+
+
+
+
