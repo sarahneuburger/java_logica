@@ -38,6 +38,18 @@ VARCHAR - Vários caracteres
 Entre parenteses, fica a quantidade de caracteres
 INT - valores inteiros
 
+DB Designer
+Site para fazer um diagrama do banco, um projeto, visual
+
+
+JOIN
+segurança da informação
+garantia
+
+FOREING KEY
+qdo conecto tabelas, tem que ser informações que não se repetem, id
+
+
 
 
 
