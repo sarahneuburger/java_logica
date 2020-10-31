@@ -112,4 +112,20 @@ SELECT AVG(produtos.valorProduto) AS 'Média' FROM produtos;
 
 # 14. Exiba o nome do produto, valor, nome da categoria e nome do fabricante dos produtos com valor maior ou igual a 
 # média dos valores de todos os produtos cadastrados
+SELECT
+	produtos.nomeProduto,
+    produtos.valorProduto,
+    categorias.nomeCategoria,
+    fabricantes.nomeFabricante
+FROM produtos
+INNER JOIN categorias
+ON produtos.idCategoria = categorias.idCategoria
+INNER JOIN fabricantes
+ON produtos.idFabricante = fabricantes.idFabricante
+WHERE produtos.valorProduto >= (SELECT AVG(produtos.valorProduto) from produtos); #tem que fazer novo select para realizar a comparação
+
+# 15. Excluir a base de dados
+DROP DATABASE exercicio06;
+
+
 
